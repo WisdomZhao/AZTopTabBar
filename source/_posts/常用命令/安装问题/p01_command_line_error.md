@@ -6,7 +6,7 @@ tags: [配置错误]
 ---
 
 
-##brew install python3
+## brew install python3
 
 ```
 Error: /usr/local/Cellar is not writable. You should change the

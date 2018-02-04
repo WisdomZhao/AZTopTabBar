@@ -5,12 +5,12 @@ date: 2018-02-04 10:37:50
 tags: [command]
 ---
 
-##验证域名是否支持ATS
+## 验证域名是否支持ATS
 ```
 nscurl --ats-diagnostics https://www.baidu.com --verbose
 ```
 
-##检查IDFA的方法
+## 检查IDFA的方法
 
 步骤：
 
@@ -23,7 +23,7 @@ find . | grep -v .svn | grep ".a" | grep -v ".app" | xargs grep
 	advertisingIdentifier
 ```
 
-##多语言
+## 多语言
 
 将 NSLocalizedString 的 key 提取到 strings文件里
 

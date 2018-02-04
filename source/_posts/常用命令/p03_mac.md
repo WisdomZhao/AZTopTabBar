@@ -6,12 +6,12 @@ tags: [command]
 ---
 
 
-##显示Library文件夹
+## 显示Library文件夹
 ```
 chflags nohidden ~/library/
 ```
 
-##MAC文件位置
+## MAC文件位置
 邮件附件
 
 ```

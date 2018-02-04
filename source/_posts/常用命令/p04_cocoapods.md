@@ -5,7 +5,7 @@ date: 2018-02-04 10:37:50
 tags: [command]
 ---
 
-##常用命令
+## 常用命令
 
 ```
 pod install --verbose --no-repo-update
@@ -20,13 +20,13 @@ pod trunk push
 pod repo update --verbose
 ```
 
-##常见问题
+## 常见问题
 
-###`pod install` 失败原因
+### `pod install` 失败原因
 
 - 可能是网络问题，重启teminal
 
-###`pod search` 来搜索类库信息时出错
+### `pod search` 来搜索类库信息时出错
 
 相信有的小伙伴已经成功安装了CocoaPods，也可以正常使用，然而会发现执行`pod search`来搜索类库信息时，却总是
 `[!]Unable to find a pod with name, author, summary, or descriptionmatching '······'`
