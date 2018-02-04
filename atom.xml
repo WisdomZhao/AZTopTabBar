@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Zhihui&#39;s Wiki</title>
+  
+  <subtitle>积累点点滴滴，清晰了解过往</subtitle>
+  <link href="/notebook/atom.xml" rel="self"/>
+  
+  <link href="http://qiusuo8.github.io/notebook/"/>
+  <updated>2018-02-04T04:06:52.756Z</updated>
+  <id>http://qiusuo8.github.io/notebook/</id>
+  
+  <author>
+    <name>Zhao Zhihui</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Home</title>
+    <link href="http://qiusuo8.github.io/notebook/2018/02/04/index/"/>
+    <id>http://qiusuo8.github.io/notebook/2018/02/04/index/</id>
+    <published>2018-02-04T02:55:57.000Z</published>
+    <updated>2018-02-04T04:06:52.756Z</updated>
+    
+    <content type="html"><![CDATA[<p>记录笔记，备忘，将琐碎的东西结构化</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;记录笔记，备忘，将琐碎的东西结构化&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SSH</title>
+    <link href="http://qiusuo8.github.io/notebook/2018/02/04/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/p01_ssh/"/>
+    <id>http://qiusuo8.github.io/notebook/2018/02/04/常用命令/p01_ssh/</id>
+    <published>2018-02-04T02:37:50.000Z</published>
+    <updated>2018-02-04T04:06:52.756Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="免ssh输入密码"><a href="#免ssh输入密码" class="headerlink" title="免ssh输入密码"></a>免ssh输入密码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp /Users/zhaozh/.ssh/id_rsa.pub root@10.0.63.238:/root/.ssh/authorized_keys</span><br></pre></td></tr></table></figure><h2 id="免输入passphrase"><a href="#免输入passphrase" class="headerlink" title="免输入passphrase"></a>免输入passphrase</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-add -K ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure><h2 id="上传和下载文件"><a href="#上传和下载文件" class="headerlink" title="上传和下载文件"></a>上传和下载文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 上传</span><br><span class="line">scp /Users/zhaozh/Documents/06_company/packages/ota/online/prepare.ipa root@10.0.63.238:/opt/mycompany/ios-build/online</span><br><span class="line"></span><br><span class="line">// 下载</span><br><span class="line">scp root@10.0.63.238:/opt/mycompany/ios-build/online/demo.txt /Users/zhaozh/Documents/06_company/packages/ota/online/</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;免ssh输入密码&quot;&gt;&lt;a href=&quot;#免ssh输入密码&quot; class=&quot;headerlink&quot; title=&quot;免ssh输入密码&quot;&gt;&lt;/a&gt;免ssh输入密码&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td cl
+      
+    
+    </summary>
+    
+      <category term="常用命令" scheme="http://qiusuo8.github.io/notebook/categories/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    
+    
+      <category term="command" scheme="http://qiusuo8.github.io/notebook/tags/command/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>iOS</title>
+    <link href="http://qiusuo8.github.io/notebook/2018/02/04/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/p02_ios/"/>
+    <id>http://qiusuo8.github.io/notebook/2018/02/04/常用命令/p02_ios/</id>
+    <published>2018-02-04T02:37:50.000Z</published>
+    <updated>2018-02-04T04:06:52.756Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="验证域名是否支持ATS"><a href="#验证域名是否支持ATS" class="headerlink" title="验证域名是否支持ATS"></a>验证域名是否支持ATS</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nscurl --ats-diagnostics https://www.baidu.com --verbose</span><br></pre></td></tr></table></figure><h2 id="检查IDFA的方法"><a href="#检查IDFA的方法" class="headerlink" title="检查IDFA的方法"></a>检查IDFA的方法</h2><p>步骤：</p><ul><li>打开终端cd到要检查的文件的根目录。</li><li>执行下列语句：</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">grep -r advertisingIdentifier . （别少了最后那个点号）</span><br><span class="line">find . | grep -v .svn | grep &quot;.a&quot; | grep -v &quot;.app&quot; | xargs grep</span><br><span class="line">advertisingIdentifier</span><br></pre></td></tr></table></figure><h2 id="多语言"><a href="#多语言" class="headerlink" title="多语言"></a>多语言</h2><p>将 NSLocalizedString 的 key 提取到 strings文件里</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find . -name *.swift | xargs genstrings -o TVService/Resources/fr.lproj/</span><br></pre></td></tr></table></figure><p>##代码行数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find . &quot;(&quot; -name &quot;*.m&quot; -or -name &quot;*.mm&quot; -or -name &quot;*.cpp&quot; -or -name &quot;*.h&quot; -or -name &quot;*.rss&quot; &quot;)&quot; -print | xargs wc -l</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;验证域名是否支持ATS&quot;&gt;&lt;a href=&quot;#验证域名是否支持ATS&quot; class=&quot;headerlink&quot; title=&quot;验证域名是否支持ATS&quot;&gt;&lt;/a&gt;验证域名是否支持ATS&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;tabl
+      
+    
+    </summary>
+    
+      <category term="常用命令" scheme="http://qiusuo8.github.io/notebook/categories/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    
+    
+      <category term="command" scheme="http://qiusuo8.github.io/notebook/tags/command/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac OS</title>
+    <link href="http://qiusuo8.github.io/notebook/2018/02/04/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/p03_mac/"/>
+    <id>http://qiusuo8.github.io/notebook/2018/02/04/常用命令/p03_mac/</id>
+    <published>2018-02-04T02:37:50.000Z</published>
+    <updated>2018-02-04T04:06:52.756Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="显示Library文件夹"><a href="#显示Library文件夹" class="headerlink" title="显示Library文件夹"></a>显示Library文件夹</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chflags nohidden ~/library/</span><br></pre></td></tr></table></figure><h2 id="MAC文件位置"><a href="#MAC文件位置" class="headerlink" title="MAC文件位置"></a>MAC文件位置</h2><p>邮件附件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/Users/zhaozhihui/Library/Containers/com.apple.mail/Data/Library/Mail\ Downloads</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;显示Library文件夹&quot;&gt;&lt;a href=&quot;#显示Library文件夹&quot; class=&quot;headerlink&quot; title=&quot;显示Library文件夹&quot;&gt;&lt;/a&gt;显示Library文件夹&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;
+      
+    
+    </summary>
+    
+      <category term="常用命令" scheme="http://qiusuo8.github.io/notebook/categories/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    
+    
+      <category term="command" scheme="http://qiusuo8.github.io/notebook/tags/command/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>cocoapods</title>
+    <link href="http://qiusuo8.github.io/notebook/2018/02/04/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/p04_cocoapods/"/>
+    <id>http://qiusuo8.github.io/notebook/2018/02/04/常用命令/p04_cocoapods/</id>
+    <published>2018-02-04T02:37:50.000Z</published>
+    <updated>2018-02-04T04:06:52.756Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">pod install --verbose --no-repo-update</span><br><span class="line">pod update --verbose --no-repo-update</span><br><span class="line">pod lib lint --verbose</span><br><span class="line">pod trunk push AppInfoTracker.podspec</span><br><span class="line">pod search AppInfoTracker</span><br><span class="line">pod trunk me</span><br><span class="line">pod setup</span><br><span class="line">ls -al ~/.cocoapods/repos/</span><br><span class="line">pod trunk push</span><br><span class="line">pod repo update --verbose</span><br></pre></td></tr></table></figure><h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h3 id="pod-install-失败原因"><a href="#pod-install-失败原因" class="headerlink" title="pod install 失败原因"></a><code>pod install</code> 失败原因</h3><ul><li>可能是网络问题，重启teminal</li></ul><h3 id="pod-search-来搜索类库信息时出错"><a href="#pod-search-来搜索类库信息时出错" class="headerlink" title="pod search 来搜索类库信息时出错"></a><code>pod search</code> 来搜索类库信息时出错</h3><p>相信有的小伙伴已经成功安装了CocoaPods，也可以正常使用，然而会发现执行<code>pod search</code>来搜索类库信息时，却总是<br><code>[!]Unable to find a pod with name, author, summary, or descriptionmatching &#39;······&#39;</code></p><p>前提：成功安装CocoaPods，不能pod search搜素类库的情况</p><ol><li>执行pod setup<ul><li>其实在你安装CocoaPods执行pod install时，系统会默认操作pod setup，然而由于中国强大的墙可能会pod setup不成功。这时就需要手动执行pod setup指令，如下：</li><li>终端输入：pod setup</li><li>会出现Setting up CocoaPods master repo，稍等几十秒，最底下会输出Setup completed。说明执行pod setup成功。</li><li>如果pod search操作还是搜索失败，如下：</li><li>终端输入：pod search AFNetworking</li><li>输出：Unable to find a pod with name, author, summary, or descriptionmatching ‘AFNetworking’ 这时就需要继续下面的步骤了。</li></ul></li><li>删除~/Library/Caches/CocoaPods目录下的search_index.json文件<ul><li>pod setup成功后，依然不能pod search，是因为之前你执行pod search生成了search_index.json，此时需要删掉。</li><li>终端输入：rm ~/Library/Caches/CocoaPods/search_index.json</li><li>删除成功后，再执行pod search。</li></ul></li><li>执行pod search<ul><li>终端输入：pod search afnetworking(不区分大小写)</li><li>输出：Creating search index for spec repo ‘master’..Done!，稍等片刻······就会出现所有带有afnetworking字段的类库。</li></ul></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;常用命令&quot;&gt;&lt;a href=&quot;#常用命令&quot; class=&quot;headerlink&quot; title=&quot;常用命令&quot;&gt;&lt;/a&gt;常用命令&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pr
+      
+    
+    </summary>
+    
+      <category term="常用命令" scheme="http://qiusuo8.github.io/notebook/categories/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    
+    
+      <category term="command" scheme="http://qiusuo8.github.io/notebook/tags/command/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>教程及开源项目</title>
+    <link href="http://qiusuo8.github.io/notebook/2018/02/04/python/%E6%95%99%E7%A8%8B/p01_course/"/>
+    <id>http://qiusuo8.github.io/notebook/2018/02/04/python/教程/p01_course/</id>
+    <published>2018-02-04T02:37:50.000Z</published>
+    <updated>2018-02-04T04:06:52.756Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="教程及开源项目"><a href="#教程及开源项目" class="headerlink" title="教程及开源项目"></a>教程及开源项目</h1><ul><li><p>快速上手 <a href="https://learnxinyminutes.com/docs/python/" rel="external nofollow noopener noreferrer" target="_blank">https://learnxinyminutes.com/docs/python/</a></p></li><li><p>练手项目 <a href="https://www.zhihu.com/question/29372574" rel="external nofollow noopener noreferrer" target="_blank">https://www.zhihu.com/question/29372574</a></p></li><li><p>教程推荐 <a href="https://www.zhihu.com/question/20702054" rel="external nofollow noopener noreferrer" target="_blank">https://www.zhihu.com/question/20702054</a><br><a href="https://www.zhihu.com/question/28530832" rel="external nofollow noopener noreferrer" target="_blank">https://www.zhihu.com/question/28530832</a></p></li><li><p>简明教程 <a href="http://www.kuqin.com/abyteofpython_cn/ch02.html" rel="external nofollow noopener noreferrer" target="_blank">http://www.kuqin.com/abyteofpython_cn/ch02.html</a></p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;教程及开源项目&quot;&gt;&lt;a href=&quot;#教程及开源项目&quot; class=&quot;headerlink&quot; title=&quot;教程及开源项目&quot;&gt;&lt;/a&gt;教程及开源项目&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;快速上手 &lt;a href=&quot;https://learnxinyminutes.co
+      
+    
+    </summary>
+    
+      <category term="python" scheme="http://qiusuo8.github.io/notebook/categories/python/"/>
+    
+      <category term="教程" scheme="http://qiusuo8.github.io/notebook/categories/python/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="教程" scheme="http://qiusuo8.github.io/notebook/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>brew install error</title>
+    <link href="http://qiusuo8.github.io/notebook/2018/02/04/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/p01_command_line_error/"/>
+    <id>http://qiusuo8.github.io/notebook/2018/02/04/常用命令/安装问题/p01_command_line_error/</id>
+    <published>2018-02-04T02:37:50.000Z</published>
+    <updated>2018-02-04T04:06:52.756Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="brew-install-python3"><a href="#brew-install-python3" class="headerlink" title="brew install python3"></a>brew install python3</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Error: /usr/local/Cellar is not writable. You should change the</span><br><span class="line">ownership and permissions of /usr/local/Cellar back to your</span><br><span class="line">user account:</span><br><span class="line">   sudo chown -R $(whoami) /usr/local/Cellar</span><br><span class="line">Error: Cannot write to /usr/local/Cellar</span><br></pre></td></tr></table></figure><p>解决办法 <code>sudo chown -R $USER /usr/local</code></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;brew-install-python3&quot;&gt;&lt;a href=&quot;#brew-install-python3&quot; class=&quot;headerlink&quot; title=&quot;brew install python3&quot;&gt;&lt;/a&gt;brew install python3&lt;/h2&gt;&lt;
+      
+    
+    </summary>
+    
+      <category term="常用命令" scheme="http://qiusuo8.github.io/notebook/categories/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    
+      <category term="安装问题" scheme="http://qiusuo8.github.io/notebook/categories/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/"/>
+    
+    
+      <category term="配置错误" scheme="http://qiusuo8.github.io/notebook/tags/%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF/"/>
+    
+  </entry>
+  
+</feed>
