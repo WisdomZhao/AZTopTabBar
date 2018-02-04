@@ -30,4 +30,7 @@ git config --global user.name "${GIT_USER_NAME}"
 git config --global user.email "${GIT_USER_EMAIL}"
 sed -i'' "s~git@github.com:~https://${GIT_REPO_TOKEN}@github.com/~" _config.yml
 
+theme_config_file="themes/Wikitten/_config.yml"
+cp "${theme_config_file}.example" "${theme_config_file}"
+
 echo "Hexo environment pre install complete OK."
